@@ -21,8 +21,8 @@ def validarCodigo(): #Procedimiento que comprueba y valida el código de Transac
         b=set(codigoIngresado)
     print("Código Válido")
 
-# Archivos - billetera.xlsx (balance) proyectoFinalPython_Ivan_Andrik/Archivos/billetera.xlsx
-direccionBilletera="python/proyectoFinalPython_Ivan_Andrik/Archivos/billetera.xlsx"
+# Archivos - billetera.xlsx (balance) Archivos/billetera.xlsx
+direccionBilletera="Archivos/billetera.xlsx"
 
 def cargarBilletera(): #abre el archivo para obtener datos
     libro=openpyxl.load_workbook(direccionBilletera)
@@ -39,8 +39,8 @@ def cargarBilleteraEnvRec(): #abre el archivo para obtener datos
     # retorna el libro y la hoja de calculo
     return libro,libro.worksheets[0]
 
-# Archivos - transacciones.xlsx (historial) proyectoFinalPython_Ivan_Andrik/Archivos/transacciones.xlsx
-direccionTransacciones="python/proyectoFinalPython_Ivan_Andrik/Archivos/transacciones.xlsx"
+# Archivos - transacciones.xlsx (historial) Archivos/transacciones.xlsx
+direccionTransacciones="Archivos/transacciones.xlsx"
 
 def cargarTransacciones(): #abre el archivo para obtener datos
     libro=openpyxl.load_workbook(direccionTransacciones)
